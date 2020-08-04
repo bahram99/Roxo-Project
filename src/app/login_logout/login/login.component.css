@@ -1,0 +1,22 @@
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+input.ng-valid{
+  border-right: 5px solid #42A948;
+}
+.pass.ng-pending{
+  border-right: 5px solid #42A948;
+}
+
+span{
+  margin-top: 0.7rem;
+  color: red;
+  float: right;
+}
+.btn-warning{ margin-bottom: 1rem}
+.row {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.form-group{ padding-top: 1rem }

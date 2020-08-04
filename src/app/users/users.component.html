@@ -1,0 +1,13 @@
+<p>users works!</p>
+<h4>{{ date  | date:'shortDate'}}</h4>
+
+<input [(ngModel)]="power" placeholder="enter power">
+<input [(ngModel)]="num" placeholder="number">
+
+<p>the result is : {{ power | pow:num }}</p>
+<button class="btn btn-primary" (click)="gotoserver()">go to servers</button>
+<a style="display: flex; justify-content: center" [routerLink]="['/user' , 6 , 'saman' ]">saman</a>
+<input  [(ngModel)]="input" placeholder="pipe for input length">
+<p>{{ input | length }}</p>
+<h1>{{ id }}</h1>
+

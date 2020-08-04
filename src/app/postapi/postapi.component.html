@@ -1,0 +1,16 @@
+<div  style="margin-top: 3rem;">
+  <div class="go-align" style="display: flex; justify-content: center;">
+    <button class="btn btn-success" (click)="fetchdata()"> فراخوانی داده</button>
+    <button class="btn btn-primary" (click)="onadddata()">اضافه کردن داده</button>
+    <button class="btn btn-warning" (click)="onupdate()">ویرایش</button>
+    <button class="btn btn-danger" (click)="ondelete()">حذف</button>
+  </div>
+  <div class="container" >
+    <ul class="list-group" *ngFor="let poo of post" style="display: flex; flex-direction: column">
+      <li class="list-group-item" style="width: 20rem">
+        <div id="rr">the id is: {{ poo.id }}</div>
+        <div>{{ poo.body }}</div>
+      </li>
+    </ul>
+  </div>
+</div>

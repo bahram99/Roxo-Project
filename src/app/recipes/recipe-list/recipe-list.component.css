@@ -1,0 +1,11 @@
+.col-xs-12{
+  width: 50rem;
+}
+
+#item {
+  display: flex;
+  justify-content: space-between;
+}
+.pull-left{
+  margin-right: 16rem;
+}

@@ -1,0 +1,6 @@
+<div style="display: flex; justify-content: center">
+  <input style="text-align: center" placeholder="text please" type="text" [(ngModel)]="inputval">
+  <button class="btn btn-info" (click)="showlog()">show log</button>
+</div>
+
+<button [swal]="{title: 'enter the string', input: 'text'}" (confirm)="show($event)" >opendialog</button>

@@ -1,0 +1,15 @@
+<hr>
+<div class="container w-50" style="border: 1px solid; border-radius: 1rem" >
+  <div class="row" style="justify-content: center">
+    <div class="col-xs-8 col-md-8 col-md-offset-2">
+      <h3 style="text-align: center;">{{account.name }}</h3>
+      <hr>
+      <h4 style="text-align: center;" >وضعیت اکانت در حالت {{ account.status }}</h4>
+      <div style="display: flex; justify-content: space-around">
+        <button id="one" class="btn " (click)="onsetto('فعال')">تبدیل به فعال</button>
+        <button id="two" class="btn " (click)="onsetto('غیرفعال')">تبدیل به غیرفعال</button>
+        <button id="thre" class="btn" (click)="onsetto('نامشخص')">تبدیل به نامشخص</button>
+      </div>
+    </div>
+  </div>
+</div>

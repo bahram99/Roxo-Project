@@ -1,0 +1,9 @@
+<div class="container">
+  <p>the id is : {{ user.id }}</p>
+  <p>the name is : {{ user.name }}</p>
+  <div class="container" style="display: flex; justify-content: center">
+    <a [routerLink]="['/user' , 2 , 'arman']">ARMAN</a>
+    <a style="margin-right: 2rem" [routerLink]="['/users']" [queryParams]="{test : 1}" fragment="restfull">servers</a>
+  </div>
+</div>
+<button class="btn btn-info btn-outline-primary" (click)="onsubject()">subject</button>

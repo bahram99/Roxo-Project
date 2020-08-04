@@ -1,0 +1,14 @@
+#rr{
+  color: red;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  justify-content: center;
+  text-align: center;
+}
+.go-align {
+  padding-bottom: 2rem;
+}
+
+

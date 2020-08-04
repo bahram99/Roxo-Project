@@ -1,0 +1,7 @@
+
+<div class="container" style="display: flex; justify-content: space-around;">
+  <button class="btn btn-warning" [routerLink]="['post']">post</button>
+</div>
+<app-showname ></app-showname>
+<app-account (createaccount)="addaccount($event)"></app-account>
+<app-userinfo (statuschange)="addnewstatus($event)" *ngFor="let acc of accounts; let i = index" [account]="acc" [id]="i"></app-userinfo>

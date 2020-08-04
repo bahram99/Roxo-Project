@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="container">
+      <div>
+        <div class="right ">
+          <app-date (value)="getval($event)"></app-date>
+          <button  class="btn border-dark" >add server</button>
+          <input placeholder="enter status..." type="text"  [(ngModel)]="pipeinput" [matAutocomplete]="auto">
+        </div>
+
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option *ngFor="let option of options" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </div>
+      <ul class="list-group" >
+        <li class="list-group-item" *ngFor="let server of servers |filter:pipeinput:'status'">
+          <strong>{{server.name}} ----</strong>
+          <strong style="float: right">{{ showdate | date: 'short' }}</strong>
+          <span class="btn" [ngClass]="setcolor(server)">{{server.status}}</span>
+        </li>
+      </ul>
+    </div>
+    <div style="width: 100px; height: 100px"  [@divstate]="state"></div>
+  </div>
+  <div class="col-md-6" style="background-color: #0c5460; text-align: center;">
+    <button id="obs" class="btn btn-outline-danger" (click)="onObserver()">test observer</button>
+    <button class="btn btn-outline-primary" (click)="onsubject()">test subject</button>
+    <button class="btn btn-outline-warning" (click)="goback()">go back</button>
+
+  </div>
+</div>
